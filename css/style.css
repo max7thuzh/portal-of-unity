@@ -44,15 +44,11 @@ html {
   );
 }
 
-body {
-  font-family: "Verdana", sans-serif;
-}
-
 .container {
   margin: 0 auto;
   padding: 20px;
   width: 900px;
-  box-shadow: 2px 2px 4px;
+  box-shadow: 4px 4px 16px;
 }
 
 .description {
@@ -91,6 +87,7 @@ body {
 
 .services-table {
   margin: 0 auto;
+  margin-bottom: 60px;
   font-family: "Roboto", sans-serif;
   border-collapse: collapse;
 }
@@ -103,24 +100,38 @@ td {
 
 .price-all {
   font-weight: bold;
-  background-color: rgb(99, 226, 255);
+  background-color: rgb(176, 102, 254);
 }
 
 .buy-now {
   font-weight: bold;
   color: #ffffff;
-  background-color: rgb(176, 102, 254);
+  background-color: rgb(99, 226, 255);
+}
+
+.wrapper-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
   color: #ffffff;
   background-color: rgb(176, 102, 254);
+  transition: box-shadow 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 8px #323232;
+  background-color: rgb(99, 226, 255);
 }
