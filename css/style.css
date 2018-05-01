@@ -1,0 +1,126 @@
+/* BASE RULES */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CODE */
+
+html {
+  background-image: linear-gradient(
+    to right,
+    rgba(176, 102, 254, 0.3),
+    rgba(99, 226, 255, 0.3)
+  );
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 900px;
+  box-shadow: 2px 2px 4px;
+}
+
+.description {
+  margin: 20px 0;
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  text-align: center;
+  color: #404040;
+}
+
+.title-primary,
+.title-second {
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #303030;
+}
+
+.paragraph,
+.list {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.paragraph {
+  text-indent: 30px;
+}
+
+.accent {
+  font-weight: bold;
+}
+
+/* table */
+
+.services-table {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  padding: 15px;
+  border: 1px solid #323232;
+}
+
+.price-all {
+  font-weight: bold;
+  background-color: rgb(99, 226, 255);
+}
+
+.buy-now {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(176, 102, 254);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(176, 102, 254);
+}
