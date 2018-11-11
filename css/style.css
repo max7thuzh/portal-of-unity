@@ -128,11 +128,11 @@ td {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgb(176, 102, 254);
-  transition: box-shadow 0.2s linear;
+  /*transition: box-shadow 0.2s linear;*/
   transition: background-color 0.2s linear;
 }
 
 .button:hover {
-  box-shadow: 2px 2px 8px #323232;
+  /*box-shadow: 2px 2px 8px #323232;*/
   background-color: rgb(99, 226, 255);
 }
